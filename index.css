@@ -1,0 +1,90 @@
+.progress {
+    background-color: #38630e;
+    border-color: #051900;
+}
+
+.progress-bar {
+    transition: width ease-in 250ms;
+    background-color: #051900;
+}
+
+.milestone-one,
+.milestone-two,
+.milestone-three,
+.milestone-four,
+.milestone-five {
+    position: absolute;
+    margin-top: -7px;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+
+}
+
+.milestone-one,
+.label-one {
+    left: 0%;
+}
+
+.milestone-two,
+.label-two {
+    left: 24%;
+}
+
+.milestone-three,
+.label-three {
+    left: 48%;
+}
+
+.milestone-four,
+.label-four {
+    left: 72%;
+}
+
+.milestone-five,
+.label-five {
+    left: 95%;
+}
+
+.milestone-selected {
+    position: absolute;
+    margin-top: -7px;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.label-one,
+.label-two,
+.label-three,
+.label-four,
+.label-five {
+    position: absolute;
+    z-index: 1;
+
+}
+
+.progress-color {
+    background-color: #051900;
+}
+
+.to-do-color {
+    background-color: #38630e;
+}
+
+#progress-mark {
+    height: 35px;
+    width: auto;
+    margin-top: -5px;
+}
+
+.label {
+    margin-top: 3rem;
+}
+
+.selected-label {
+    margin-top: 1.15rem;
+}
