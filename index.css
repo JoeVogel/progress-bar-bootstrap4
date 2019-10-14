@@ -8,6 +8,20 @@
     background-color: #051900;
 }
 
+.progress-color {
+    background-color: #051900;
+}
+
+.to-do-color {
+    background-color: #38630e;
+}
+
+#progress-mark {
+    height: 35px;
+    width: auto;
+    margin-top: -5px;
+}
+
 .milestone-one,
 .milestone-two,
 .milestone-three,
@@ -24,27 +38,27 @@
 
 .milestone-one,
 .label-one {
-    left: 0%;
+    left: -1%;
 }
 
 .milestone-two,
 .label-two {
-    left: 24%;
+    left: 25%;
 }
 
 .milestone-three,
 .label-three {
-    left: 48%;
+    left: 49%;
 }
 
 .milestone-four,
 .label-four {
-    left: 72%;
+    left: 73%;
 }
 
 .milestone-five,
 .label-five {
-    left: 95%;
+    left: 97%;
 }
 
 .milestone-selected {
@@ -62,29 +76,50 @@
 .label-three,
 .label-four,
 .label-five {
-    position: absolute;
-    z-index: 1;
-
-}
-
-.progress-color {
-    background-color: #051900;
-}
-
-.to-do-color {
-    background-color: #38630e;
-}
-
-#progress-mark {
-    height: 35px;
-    width: auto;
-    margin-top: -5px;
-}
-
-.label {
     margin-top: 3rem;
+    position: relative;
+}
+
+.label-one {
+    margin-left: -0.2rem;
+}
+
+.label-two {
+    margin-left: -1.6rem;
+}
+
+.label-three {
+    margin-left: -3.6rem;
+}
+
+.label-four {
+    margin-left: -2.4rem;
+}
+
+.label-five {
+    margin-left: -4.3rem;
 }
 
 .selected-label {
-    margin-top: 1.15rem;
+    margin-top: 1.15rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .progress-group {
+        /* padding-left: 4rem; */
+        margin: 0 auto
+    }
+
+    .label-one,
+    .label-two,
+    .label-three,
+    .label-four,
+    .label-five {
+        visibility: hidden;
+    }
+
+    .selected-label {
+        visibility: visible !important;
+    }
 }
